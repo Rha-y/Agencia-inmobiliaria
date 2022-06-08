@@ -77,16 +77,15 @@ input,button{
 }
 /* reusable css classes */
 .container{
-    max-width: 1024px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-
+    max-width: 1360px;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 .grid{
     display: grid;
 }
 .section{
-    padding: 4.5rem 0 2 rem;
+    padding: 4.5rem 0 2rem;
 }
 .section__title{
     font-size: var(--h2-font-size);
@@ -114,6 +113,7 @@ nav{
     }
 nav i{
     font-size: 1.25rem;
+    padding: 0.25rem 0;
 }
 .nav-container nav a{
     color:var(--text-color);
@@ -123,7 +123,7 @@ nav i{
     bottom: 0;
     background-color: var(--body-color);
     box-shadow: 0 8px 24px hsla(228, 66%, 45%, 0.15);
-    width:100%;
+    width: 100%;
 }
 nav span{
     display:none;
@@ -132,11 +132,52 @@ nav span{
     width:2rem;
     height:auto;
 }
-/*home*/
-.inicio-numeros{
-    display:inline-flex;
-    justify-content: space-between;
+header .logo{
+    margin-left: 1rem;
 }
+header .buttons{
+    margin-right: 1rem;
+    display:flex;
+}
+header div button{
+    background-color: transparent;
+    color:#fff;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    padding: 0.35rem;
+    margin: 0;
+}
+.ingresar{
+    border-right: 0.1rem solid #fff;
+}
+.registrarse{
+    border-left: 0.1rem solid #fff;
+}
+/*home*/
+.inicio__titulo{
+    font-size: var(--biggest-font-size);
+    margin-bottom: 1rem;
+}
+.inicio__descripcion{
+    color:#fff;
+    margin-bottom: 1rem;
+}
+.inicio form{
+    background-color: var(--body-color);
+    margin-bottom: 1rem;
+    padding: 0.35rem;
+}
+.inicio__valores{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+body{
+    background: linear-gradient(170deg,hsl(0,0%,22%) 0%,hsl(0,0%,6%) 30%);
+}
+
 @media screen and (min-width:600px) {
     .nav-container{
         position:static;
