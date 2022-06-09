@@ -144,7 +144,7 @@ header div button{
     color:#fff;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
-    padding: 0.35rem;
+    padding: 0.1rem 0.35rem;
     margin: 0;
 }
 .ingresar{
@@ -157,6 +157,7 @@ header div button{
 .inicio__titulo{
     font-size: var(--biggest-font-size);
     margin-bottom: 1rem;
+    color:#fff;
 }
 .inicio__descripcion{
     color:#fff;
@@ -166,14 +167,36 @@ header div button{
     background-color: var(--body-color);
     margin-bottom: 1rem;
     padding: 0.35rem;
+    border-radius: 10px;
+}
+.inicio form i{
+    color:var(--first-color);
+}
+.inicio form button{
+    background-color: var(--first-color);
+    padding: 0.5rem;
+    border-radius: 10px;
+    color:#fff;
 }
 .inicio__valores{
     display:flex;
     justify-content:space-around;
     align-items: center;
     margin-bottom: 1rem;
+    color:#fff;
 }
-
+.inicio__valores h2{
+    color:#fff;
+}
+.inicio__valores h2 span{
+    color:var(--second-color);
+}
+.inicio form input::placeholder{
+    color:var(--text-color-light);
+}
+.inicio__imagen img{
+    border-radius: 125px 12px;
+}
 body{
     background: linear-gradient(170deg,hsl(0,0%,22%) 0%,hsl(0,0%,6%) 30%);
 }
